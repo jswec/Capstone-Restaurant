@@ -4,15 +4,14 @@ The app that I've developed is a restaurant recommendation app that takes data f
 
 ## The Business Case
 
-Yelp is quite possibly the largest review site in the world for local businesses, encompassing all sorts of businesses from doctor’s offices to cleaning services. At its core however, Yelp began as a crowd-sourced review site, democratizing the restaurant review process and bringing greater exposure to restaurants all over the world by soliciting user-generated content for the restaurants in its database.
+Yelp is a popular online platform that provides user-generated reviews and recommendations for local businesses, including restaurants. Adding the functionality of this app would be a valuable addition to the platform. It would help Yelp to expand its user base by attracting people who are moving to new cities and looking for their new spots. By offering this functionality, Yelp could also increase user engagement, as users would be more likely to continue using the platform even after they have moved to a new location. Additionally, this feature could help Yelp to differentiate itself from competitors.
 
-Over time, the popularity of Yelp as a restaurant information resource has led to the creation of millions of points of data. This has somewhat diluted the impact of Yelp reviews for a restaurant and led to some discontent from restaurant owners. Below are 3 of many points that lead to dissatisfaction with Yelp by business owners.
+**1.  People are The Same**
 
-**1.  Law of Large Numbers**
+Despite being born in different states or regions, we are all fundamentally the same, maybe not Texas.
+It doesn't matter where you're from, you can make your new home wherever you'd like, and we can help.
 
-Due to the sheer volume of reviews, every review that goes into a restaurant ends up stabilizing their rating. There it stays forever, usually at a 4. At this point, most restaurants shoot for a 4, and only the truly best like Le Bernadin (3 Michelin Stars), manage to get a 4.5. Restaurants with a 5 star review typically are newer restaurants with less than 30 reviews, and a lot of chefs believe those mostly come from friends of the restaurant. You can see the distribution in reviews in the below graph. It is assumed 1 and 2 star restaurants usually end up closing, but I can assure you, my local Chinese take out is open and busy as ever. This may also be bias from Yelp’s API feeding me restaurants with a higher review count.
-
-<img src="Images/star_hist_report_card.png">
+<img src="Images/malkovich.jpg">
 
 **2.  Extreme Volatility**
 
@@ -28,10 +27,10 @@ Given that we have established some of the issues many restaurants face when it 
 
 Yelp holds millions of user reviews, and using NLP we can take this data and provide comprehensive quantitative metrics for a restaurant without having to spend hours hand sorting reviews. Using this metric, restaurants can hone in on problems and work to improve their business.
 
-## The Process
+## How Do We Get There?
 
-The process for creating these metrics are quite simple, and outlined in the below graph:
-<img src="Images/flowchart.png">
+This is How I did it.
+<img src="Images/flowchart.jpg">
 
 ## Step 1:  Gathering Data
 
