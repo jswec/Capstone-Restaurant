@@ -1,6 +1,6 @@
-# Yelp Report Cards
+# Nom-Native
 
-Welcome to a project i’m calling the Yelp Report Cards. In this project, it is my aim to produce a business value-add to Yelp’s current business owner services. Using NLTK’s Vader Sentiment Analysis and combining it with Genism’s LDA library, I created a quantitative report card for restaurants to determine areas in which they are doing well, and areas in which they can improve on.
+The app that I've developed is a restaurant recommendation app that takes data from restaurants in a user's hometown and uses that information to find the closest restaurant in their new hometown. The app would allow users to their favorite restaurants, bars, and hip date night spots, and then search for their counterpart in their new City. Making it a valuable resource for anyone looking to explore their new home's culinary scene.
 
 ## The Business Case
 
