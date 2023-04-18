@@ -36,7 +36,7 @@ This is How I did it.
 This is a proof of concept so instead of scraping all of Yelp's data, I opted for around 5.3 million reviews over 152 thousand businesses
 The nature of this very project is more ethereal in if it's successful, so I chose my homestate of NC where I could at least verify some accuracy by choosing places I've been, the dataset contained over 11 thousand businesses
 the closest to it was Ohio, despite being a terrible place that no one should ever visit, I had the data to compare.
-<img src="Images/NCohio.jpg">
+<img src="Images/NC.jpg">
 
 ## Sentiment Analysis
 
