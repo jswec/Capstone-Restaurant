@@ -1,6 +1,6 @@
 # Nom-Native
 
-The app that I've developed is a restaurant recommendation app that takes data from restaurants in a user's hometown and uses that information to find the closest restaurant in their new hometown. The app would allow users to their favorite restaurants, bars, and hip date night spots, and then search for their counterpart in their new City. Making it a valuable resource for anyone looking to explore their new home's culinary scene.
+The app that I've developed is a restaurant recommendation app that takes data from a specific beloved restaurant in the user's hometown and uses that information to find the closest match in their new stomping grounds. The app would allow users to plug in their favorite restaurants, bars, and hip date night spots, and then search for their counterpart in their new city. Making it a valuable resource for anyone looking to explore their new home's culinary scene.
 
 ## The Business Case
 
@@ -34,7 +34,7 @@ This is How I did it.
 ## Step 1:  Gathering Data
 
 This is a proof of concept so instead of scraping all of Yelp's data, I opted for around 5.3 million reviews over 152 thousand businesses
-The nature of this very project is more ethereal in if it's successful, so I chose my homestate of NC, the dataset contained over 11 thousand businesses
+The nature of this very project is more ethereal in if it's successful, so I chose my homestate of NC where I could at least verify some accuracy by choosing places I've been, the dataset contained over 11 thousand businesses
 the closest to it was Ohio, despite being a terrible place that no one should ever visit, I had the data to compare.
 <img src="Images/NCohio.jpg">
 
@@ -57,13 +57,28 @@ the data. Next I had to one hot encode all categorical data into numerical data 
 
 ## Putting it Together
 
-Finally I joined the vaderized data set with the feature set by their restaurant id.
+Finally I joined the vaderized data set with the feature set by their restaurant id. 
+I then wrote a function that computes Euclidean distance between a chosen restaurant matched against all rows in other state's database.
+It then prints out the top 5 names of what restaurants are mostly correlated.
 
+def find_similar_rows(nc, oh, row_index):
+    # Get the specified row from the first dataframe
+    row = nc.iloc[row_index]
 
+    # Compute the Euclidean distance between the specified row and all rows in the second dataframe
+    distances = np.linalg.norm(oh - row, axis=1)
+
+    # Find the indices of the 5 smallest distances
+    min_distance_indices = np.argsort(distances)[:5]
+
+    # Return the top 5 rows in the second dataframe with the smallest distance to the specified row
+    return oh.iloc[min_distance_indices]
+    
+<img src='Images/results.jpg'>
 
 
 ## Conclusions
 
-This project was a fun exercise that combines my passion for food and restaurants in general with my budding data science skills.  There were also some valuable lessons learned.  I now know that LDA is not a model that I want to use in a limited time frame, and could possibly have better sped things up using TFIDF and using a machine learning classifier.  In this case, I used LDA because I wanted to stretch my capabilities and venture into unsupervised learning.  I also enjoyed the easy interpretability of LDA that gave me greater control on fine tuning the model.  In the end, I ended up using TF-IDF in combination with LDA in order to better bubble up service as my topic.
-
-Further expansion of this project will include review snapshots so that restaurant owners can get a sampling of specific events they may want to address, in addition, it may help them better understand the data.  In addition, I'd like to compile an overall report card by borough to determine if each borough has specific deficiencies.  Lastly, I'd like to refine my data a little more and explore if overall rating is affected by these topics.
+This project was a bit lofty in it's pursuits but based on my fledgling coding and data science skills I do believe it performs adequately, all there is left
+to do now is test it myself.
+Further expansion of this project would definitely be more specific scraping of up to date data, specific city wide data instead of state, and even the addition of other review websites to really round out the whole shebang. 
