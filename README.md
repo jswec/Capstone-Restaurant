@@ -45,7 +45,6 @@ more exact star rating values.
 
 While it proved somewhat statistically unremarkable it was a nice glimpse into how sentiment does or does not correlate with star rating.
 
-For those unfamiliar with Vader, below is a snapshot of some of our restaurant reviews that have been "vaderized":
 
 <img src='Images/wordcloud.jpg'>
 
