@@ -80,4 +80,12 @@ def find_similar_rows(nc, oh, row_index):
 
 This project was a bit lofty in it's pursuits but based on my fledgling coding and data science skills I do believe it performs adequately, all there is left
 to do now is test it myself.
-Further expansion of this project would definitely be more specific scraping of up to date data, specific city wide data instead of state, and even the addition of other review websites to really round out the whole shebang. 
+Further expansion of this project would definitely be more specific scraping of up to date data, specific city wide data instead of state, and even the addition of other review websites to really round out the whole shebang.
+
+├── Data                          <- Data Source
+├── Images                        <- Images Folder
+├── Notebooks                     <- Notebooks Folder
+├── .gitignore                    <- gitignore
+├── Capstone.pdf                  <- PDF version of project presentation
+├── Final.ipynb                   <- Final Notebook
+└── README.md                     <- ReadMe
