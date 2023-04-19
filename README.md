@@ -46,7 +46,6 @@ more exact star rating values.
 While it proved somewhat statistically unremarkable it was a nice glimpse into how sentiment does or does not correlate with star rating.
 
 
-<img src='Images/wordcloud.jpg'>
 
 
 ## Data Cleaning
@@ -88,6 +87,6 @@ Further expansion of this project would definitely be more specific scraping of 
 ├── Notebooks                     <- Notebooks Folder
 ├── .gitignore                    <- gitignore
 ├── Capstone.pdf                  <- PDF version of project presentation
-├── Final.ipynb                   <- Final Notebook
+├── Final Notebook.ipynb          <- Final Notebook
 └── README.md                     <- ReadMe
 ```
