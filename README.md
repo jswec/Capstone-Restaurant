@@ -58,8 +58,9 @@ the data. Next I had to one hot encode all categorical data into numerical data 
 Finally I joined the vaderized data set with the feature set by their restaurant id. 
 I then wrote a function that computes Euclidean distance between a chosen restaurant matched against all rows in other state's database.
 It then prints out the top 5 names of what restaurants are mostly correlated.
-
-def find_similar_rows(nc, oh, row_index):
+    
+    # The Function
+    def find_similar_rows(nc, oh, row_index):
     # Get the specified row from the first dataframe
     row = nc.iloc[row_index]
 
